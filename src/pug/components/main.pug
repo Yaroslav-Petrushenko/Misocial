@@ -1,0 +1,26 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+    body 
+        .wrapper
+            section.plans
+                .title-info
+                    h3 Misocial
+                    h1 Select a Plan
+                    p.ti Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.
+                    .flex
+                        +card(cards.free)
+                        +card(cards.basic)
+                        +card(cards.vip)
+            section.proposition 
+                h3 SOCAL MARKETING & ANALYTICS
+                p Take control of your data
+                .flex
+                    .btn
+                        a(href="#" class="vio") GET STARTED
+                    .btn
+                        a(href="#" class="vio") EXPLORE FEATURES 

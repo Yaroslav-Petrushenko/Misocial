@@ -1,0 +1,67 @@
+- 
+    let mainMenu = [
+        {
+            name: "Home" , 
+            url: "#"
+        },
+        {
+            name: "Why Misocial" , 
+            url: "#"
+        },
+        {
+            name: "Features" , 
+            url: "#"
+        },
+        {
+            name: "Articles" , 
+            url: "#"
+        },
+        {
+            name: "Pricing" , 
+            url: "#"
+        },
+    ] 
+- 
+    let cards = {
+        free: {
+            src: "img/ico1",
+            alt: "Misocial free plan",
+            price: "0",
+            description: "Lorem ipsum dolor sit amet. sed do eiusmod tempor incididunt ut. Labore et dolore magna aliqua. quis nostrud exercitation ullamco laboris",
+            href: "#"
+        },
+        basic: {
+            src: "img/ico2",
+            alt: "Misocial basic plan",
+            price: "29",
+            description: "Lorem ipsum dolor sit amet. sed do eiusmod tempor incididunt ut. Labore et dolore magna aliqua. quis nostrud exercitation ullamco laboris",
+            href: "#"
+
+        },
+        vip: {
+            src: "img/ico3",
+            alt: "Misocial vip plan",
+            price: "49",
+            description: "Lorem ipsum dolor sit amet. sed do eiusmod tempor incididunt ut. Labore et dolore magna aliqua. quis nostrud exercitation ullamco laboris",
+            href: "#"
+
+        }
+    }
+
+mixin menu (items, myclass) 
+    for item in items 
+        li 
+            a(href=item.url) #{item.name} 
+    li.get-started 
+        a(href="#" class=myclass) GET STARTED 
+
+mixin card (item)
+    figure.pricecard 
+        figcaption 
+            picture 
+                sourse(srcset=item.src + ".webp", type="image/webp")
+                img(src=item.src + ".png", alt=item.alt)
+            p.title-card personal 
+            p.price <sup>$</sup>#{item.price}<span>/month</span>
+            p.card-descr #{item.description}
+            a(href=item.href class="vio") SELECT PLAN
