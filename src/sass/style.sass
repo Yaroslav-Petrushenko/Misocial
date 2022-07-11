@@ -1,27 +1,29 @@
 @import components/mixin
-body
-    font-family: "Maven Pro",sans-serif
+body 
+    font-family: 'Maven Pro', sans-serif
     margin: 0
-.wrapper 
+.wrapper
     margin: 0 auto
+    width: 95%
+    
 .white 
     +btn("white") 
 .violet 
     +btn("violet")
 .vio 
     +btn("vio")
+.flex 
+    display: flex
+    justify-content: center
+ul 
+    align-items: center
+    list-style: none    
+
+a 
+    list-style: none
+    text-decoration: none 
 
 
 @import components/header
 @import components/main
 @import components/footer
-
-.flex
-    display: flex
-
-ul
-    list-style: none
-    align-items: center
-    
-a 
-    text-decoration: none

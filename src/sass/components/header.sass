@@ -1,83 +1,161 @@
-.header
+.one 
     background: url(../img/maps.png) no-repeat
     background-size: cover
-
-.top
-    padding-top: 20px
+.header
+    padding-top: 25px
+    
+    align-items: center
+.top-menu
+    display: none
+    +media(1030)
+        display: flex
+        position: relative         
+    
+.top 
     justify-content: space-between
     align-items: center
+
 .logo 
-    img
+    p
         margin-left: 20px
-        padding: 7px
-
-.top-menu 
-    a
-        &:hover 
-            text-decoration: underline
-
-.logo 
-    h1
         align-items: center
         font-size: 25px
-        line-height: 29px
-        letter-spacing: 4px
+        letter-spacing: 6px
         color: #ffffff
-        font-weight: 700
-        margin-left: 20px
-
+        font-weight: 700 
+    img 
+        padding: 16px
+    
 .navmenu 
-    a 
-        display: inline-block
-        position: relative
-        margin: 0 30px
-        font-size: 16px
-        color: #ffffff
-        font-weight: 500
-        text-decoration: none
-
-
-.pricing-table 
+    font-size: 16px
+    line-height: 19px
+    color: #ffffff
+    font-weight: 500
+    li
+        a 
+            color: #ffffff
+            padding: 15px 20px
+            position: relative
+            &::before
+                content: ""
+                position: absolute
+                bottom: 0
+                left: 0
+                width: 100%
+                height: 2px
+                background-color: transparent
+            &:hover::before
+                background-color: #fff
+                
+.PricingTable
     padding-top: 90px
     text-align: center
-    strong
-        position: relative
-        font-size: 14px
-        letter-spacing: 1px
-        line-height: 32px
-        color: #ffffff
-        font-weight: 700
-        &::before
-            content: ""
-            position: absolute
-            width: 25px
-            height: 1px
-            right: -30px
-            bottom: 8px 
-            background-color: #ffffff
-        &::after
-            content: ""
-            position: absolute
-            width: 25px
-            height: 1px
-            left: -30px
-            bottom: 8px
-            background-color: #ffffff
     h2
-        font-size: 86px
-        letter-spacing: -3px
-        line-height: 72px
         color: #ffffff
+        padding: 12px 0
+        font-size: 50px
+        letter-spacing: -2px
         font-weight: 500
-        margin: 20px 0 20px
+        margin: 0
+        +media(900)
+            color: #ffffff
+            line-height: 86px
+            font-size: 86px
+            padding: 30px 0
     p 
         font-size: 16px
-        line-height: 28px
         color: #ffffff
         font-weight: 400
-        width: 70%
-        margin: 0 auto
+        
 
-.downl
-    padding-top: 180px
-    padding-bottom: 50px
+strong
+    position: relative
+    font-size: 11px
+    letter-spacing: 1px
+    color: #ffffff
+    font-weight: 700
+    +media(900)
+        font-size: 14px
+    &::after
+        content: ""
+        position: absolute
+        width: 25px
+        height: 1px
+        top: 50% 
+        background-color: #ffffff
+        right: -40px
+    &::before
+        content: ""
+        position: absolute
+        width: 25px
+        height: 1px
+        right: -40px
+        top: 50% 
+        background-color: #ffffff
+        left: -40px
+
+.poi 
+    margin: 0
+       
+.pointer 
+    display: inline-block
+    background-color: #fff
+    border-radius: 50%
+    width: 65px
+    height: 65px
+    background-image: url(../img/ar.png)
+    background-repeat: no-repeat
+    background-position: 50% 50%
+    margin-bottom: 130px
+    -webkit-transition: .3s all ease
+    -o-transition: .3s all ease
+    transition: .3s all ease
+    margin-top: 160px
+    &:hover 
+        background-color: #dedede
+
+.hamburger
+    height: 49px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    +media(1030)
+        display: none
+    span
+        margin: 4px 0
+        width: 35px
+        height: 3px
+        background-color: #fff
+        border-radius: 5px
+    .nav-menu 
+        display: none
+        position: absolute
+        margin: 0
+        left: 0
+        right: 0
+        top: 55px
+        background-color: #e4e4ec
+        z-index: 1
+    .nav-menu 
+        a 
+            display: block
+            padding: 10px 20px
+            color: #25252c
+            line-height: 24px
+            font-weight: 700
+    .nav-menu 
+        li 
+            display: flex
+            flex-direction: column
+
+    .active-burger 
+        display: block
+
+
+
+
+
+
+
+
+

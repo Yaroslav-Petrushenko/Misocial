@@ -5,7 +5,7 @@
             url: "#"
         },
         {
-            name: "Why Misocial" , 
+            name: "Why MISOCIAL" , 
             url: "#"
         },
         {
@@ -52,16 +52,18 @@ mixin menu (items, myclass)
     for item in items 
         li 
             a(href=item.url) #{item.name} 
-    li.get-started 
+    .get-started 
         a(href="#" class=myclass) GET STARTED 
 
 mixin card (item)
-    figure.pricecard 
+    figure.price-card
         figcaption 
             picture 
                 sourse(srcset=item.src + ".webp", type="image/webp")
                 img(src=item.src + ".png", alt=item.alt)
-            p.title-card personal 
-            p.price <sup>$</sup>#{item.price}<span>/month</span>
+            p.title-card PERSONAL 
+            p.price 
+                sup $
+                |#{item.price}<span>/month</span>
             p.card-descr #{item.description}
             a(href=item.href class="vio") SELECT PLAN
