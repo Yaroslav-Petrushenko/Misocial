@@ -1,11 +1,23 @@
 .one 
     background: url(../img/maps.png) no-repeat
     background-size: cover
-.header
+div.header
     padding-top: 25px
-    
     align-items: center
-.top-menu
+    h2
+        color: #ffffff
+        padding: 12px 0
+        font-size: 50px
+        letter-spacing: -2px
+        font-weight: 500
+        margin: 0
+        font-family: "Maven Pro"
+        +media(900)
+            color: #ffffff
+            line-height: 86px
+            font-size: 86px
+            padding: 30px 0
+.navmenu
     display: none
     +media(1030)
         display: flex
@@ -19,17 +31,18 @@
     align-items: center
 
 .logo 
+    align-items: center
     p
-        margin-left: 20px
+        
         align-items: center
         font-size: 25px
         letter-spacing: 6px
         color: #ffffff
         font-weight: 700 
     img 
-        padding: 16px
+        padding-right: 17px
     
-.navmenu 
+.top-menu 
     font-size: 16px
     line-height: 19px
     color: #ffffff
@@ -53,18 +66,7 @@
 .PricingTable
     padding-top: 90px
     text-align: center
-    h2
-        color: #ffffff
-        padding: 12px 0
-        font-size: 50px
-        letter-spacing: -2px
-        font-weight: 500
-        margin: 0
-        +media(900)
-            color: #ffffff
-            line-height: 86px
-            font-size: 86px
-            padding: 30px 0
+    
     p 
         font-size: 16px
         color: #ffffff
@@ -109,7 +111,7 @@ strong
     background-image: url(../img/ar.png)
     background-repeat: no-repeat
     background-position: 50% 50%
-    margin-bottom: 130px
+    margin-bottom: 50px
     -webkit-transition: .3s all ease
     -o-transition: .3s all ease
     transition: .3s all ease
