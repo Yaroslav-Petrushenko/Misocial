@@ -9,7 +9,10 @@
     display: none
     +media(1030)
         display: flex
-        position: relative         
+        position: relative   
+        flex-direction: row
+        top: 0      
+        background: transparent
     
 .top 
     justify-content: space-between
@@ -115,7 +118,7 @@ strong
         background-color: #dedede
 
 .hamburger
-    height: 49px
+    height: 50px
     display: flex
     flex-direction: column
     justify-content: center
@@ -127,27 +130,27 @@ strong
         height: 3px
         background-color: #fff
         border-radius: 5px
-    .top-menu
-        display: none
-        position: absolute
-        margin: 0
-        left: 0
-        right: 0
-        top: 55px
-        background-color: #e4e4ec
-        z-index: 1
-        li 
-            display: flex
-            flex-direction: column
-            a 
-                display: block
-                padding: 10px 20px
-                color: #25252c
-                line-height: 24px
-                font-weight: 700
-    .active-burger 
-        display: block
-        
+
+
+.active-burger 
+    display: inline-block
+    position: absolute
+    flex-direction: column
+    top: 80px
+    left: 0
+    background: url(../img/maps.png) no-repeat
+    background-size: cover
+    
+    z-index: 2
+    +media(700)
+        top: 115px
+    ul
+        flex-direction: column
+        align-items: center
+    li
+        a
+            display: inline-block
+            padding: 20px 30px
 
 
 
